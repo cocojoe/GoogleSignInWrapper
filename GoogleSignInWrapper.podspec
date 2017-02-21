@@ -14,9 +14,10 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.requires_arc = true
 
-  s.module_name = "GoogleSignInWrapper"
-  s.source_files = "GoogleSignInWrapper/*.{swift,h}"
-  s.resources = "GoogleSignInWrapper/*.bundle"
-  s.vendored_frameworks  = 'GoogleSignInWrapper/*.framework'
   s.frameworks = 'SystemConfiguration', 'SafariServices'
+
+  s.preserve_paths       = 'GoogleSignInWrapper.framework'
+  s.public_header_files  = 'GoogleSignInWrapper.framework/Versions/A/Headers/*.h'
+  s.resource             = 'GoogleSignInWrapper.framework/Versions/A/Resources/**/*'
+  s.vendored_frameworks  = 'GoogleSignInWrapper.framework'
 end

@@ -1,0 +1,6 @@
+framework module GoogleSignInWrapper {
+  umbrella header "GoogleSignInWrapper.h"
+
+  export *
+  module * { export * }
+}
