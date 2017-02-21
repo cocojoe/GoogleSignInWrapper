@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double GoogleSignInWrapperVersionNumber;
 FOUNDATION_EXPORT const unsigned char GoogleSignInWrapperVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <GoogleSignInWrapper/PublicHeader.h>
-
-#import "GoogleSignIn.h"
